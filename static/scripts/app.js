@@ -100,7 +100,7 @@ if (navigator.getUserMedia) {
       soundClips.appendChild(clipContainer);
 
       audio.controls = true;
-      var blob = new Blob(chunks, { 'type' : 'audio/ogg; codecs=opus' });
+      var blob = new Blob(chunks, { 'type' : 'audio/wav; codecs=opus' });
       chunks = [];
       var audioURL = window.URL.createObjectURL(blob);
       audio.src = audioURL;
@@ -179,9 +179,9 @@ function visualize(stream) {
 }
 
 var wantedWords = [
-  'Zero',
-  'One',
-  'Two','Three','Four','Five','Six','Seven',
+  'cassava',
+  'farming',
+  'maize','beans','rice','cowpeas','bananas','irish',
 ];
 /*
  '
@@ -198,10 +198,10 @@ var wantedWords = [
  'Yes',
  'No', */
 var fillerWords = [
-  'Dog',
-  'Cat',
-                   'Bird',
-                   'Tree',
+  'tomatoes',
+  'millet',
+                   'sorghum',
+                   
 ];
 /*
  'Marvin',

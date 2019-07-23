@@ -65,7 +65,7 @@ def upload():
     if not os.path.exists(new_word_path):
         os.mkdir(new_word_path)
 
-    filename = word_path + '/' + word + '/' + session_id + '_' + uuid.uuid4().hex + '.ogg'
+    filename = word_path + '/' + word + '/' + session_id + '_' + uuid.uuid4().hex + '.wav'
     secure_name = secure_filename(filename)
 
     #audio_data.save(os.path.join(filename, secure_name))
